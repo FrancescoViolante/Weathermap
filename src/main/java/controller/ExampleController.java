@@ -12,6 +12,8 @@ import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 import org.apache.commons.io.IOUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -20,46 +22,49 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import util.LogUtil;
 import util.PropertyUtil;
-
 
 @RestController
 @SpringBootApplication
 @RequestMapping("/Weathermap")
 public class ExampleController {
-	
-	public static String appid= PropertyUtil.getPropertyValue("APPID");
-	
-	@RequestMapping("/getVal/{id}")
-	public String firstMessage(@PathVariable("cityName") String cityName) {
-		System.out.println(cityName);
-		System.out.println(PropertyUtil.getPropertyValue("prova"));
+
+	private static final Logger logger = LogManager.getLogger(Thread.currentThread().getStackTrace()[1].getClassName());
+
+	public static String appid = PropertyUtil.getPropertyValue("APPID");
+
+	@GetMapping("/prova")
+	public String firstMessage() {	
+		
 		return "Greetings from Spring Boot!";
 	}
 
-	@GetMapping(value = "/getWheather", produces = MediaType.APPLICATION_JSON_VALUE)
+	@PostMapping(value = "/getWheather", produces = MediaType.APPLICATION_JSON_VALUE)
 	public JSONObject getWheather(@RequestBody List<Long> idUsedRb) {
-		List<Long> idList= find();		
-		
+
+		LogUtil.logMethodStart();
+
+		List<Long> idList = find();
+
 		JSONObject json = null;
-		
-		//Sets BerlinId for the first run
-		long randomId= Long.parseLong(PropertyUtil.getPropertyValue("BerlinId"));
-		
-		if(idUsedRb.size()!=0) {
+
+		// Sets BerlinId for the first run
+		long randomId = Long.parseLong(PropertyUtil.getPropertyValue("BerlinId"));
+
+		if (idUsedRb.size() != 0) {
 			idList.removeAll(idUsedRb);
-			randomId= getRandomId(idList);
+			randomId = getRandomId(idList);
 		}
-		
-		
+
 		try {
-			URL url = new URL("http://api.openweathermap.org/data/2.5/forecast?id="+randomId+"&APPID="+appid);
-			
+			URL url = new URL("http://api.openweathermap.org/data/2.5/forecast?id=" + randomId + "&APPID=" + appid);
+
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			conn.setRequestMethod("GET");
 			conn.setRequestProperty("Accept", MediaType.APPLICATION_JSON_VALUE);
@@ -73,47 +78,48 @@ public class ExampleController {
 
 			JSONParser parser = new JSONParser();
 			json = (JSONObject) parser.parse(message);
-//			System.out.println(json);
 			conn.disconnect();
 		} catch (IOException | ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			logger.error("Error :" + e);
 		}
+		LogUtil.logMethodEnd();
 		return json;
 	}
-	
+
 	public static List<Long> find() {
-		
-		List<Long> idList=new ArrayList<>(); 
-	   
-	    try {     
+		LogUtil.logMethodStart();
+		List<Long> idList = new ArrayList<>();
 
-	        String cityListString = new String(Files.readAllBytes(Paths.get("C:\\Users\\fr_vi\\eclipse-workspace-try\\city.list.json")), "UTF-8");    
-	        JSONParser parser = new JSONParser();
-			JSONArray jsonArray =  (JSONArray) parser.parse(cityListString);			
-			
-			for(int i = 0; i< jsonArray.size(); i++)
-			{			     
-				JSONObject jsonObject= (JSONObject) jsonArray.get(i);
+		try {
+
+			String cityListString = new String(
+					Files.readAllBytes(Paths.get("C:\\Users\\fr_vi\\eclipse-workspace-try\\city.list.json")), "UTF-8");
+			JSONParser parser = new JSONParser();
+			JSONArray jsonArray = (JSONArray) parser.parse(cityListString);
+
+			for (int i = 0; i < jsonArray.size(); i++) {
+				JSONObject jsonObject = (JSONObject) jsonArray.get(i);
 				idList.add((long) jsonObject.get("id"));
-			}			
-	
-	    }
-	    catch(IOException | ParseException e) {
-	        e.printStackTrace();      
-	    }
+			}
 
-	    return idList;
+		} catch (IOException | ParseException e) {
+			logger.error("Error :" + e);
+		}
+		LogUtil.logMethodEnd();
+		return idList;
 	}
-	
+
 	public Long getRandomId(List<Long> idList) {
+		LogUtil.logMethodStart();
+		
+		int index = ThreadLocalRandom.current().nextInt(idList.size());		
+		logger.info("\nIndex :" + index);
+		LogUtil.logMethodEnd();
+		
+		return idList.get(index);
 
-	    int index = ThreadLocalRandom.current().nextInt(idList.size());		
-	    System.out.println("\nIndex :" + index );
-	    return idList.get(index);
-	    
 	}
-	
+
 	public static void main(String args[]) {
 		SpringApplication.run(ExampleController.class, args);
 	}

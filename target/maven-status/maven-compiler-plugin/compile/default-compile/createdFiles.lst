@@ -1,2 +1,3 @@
-controller\ExampleController.class
+util\LogUtil.class
 util\PropertyUtil.class
+controller\ExampleController.class
