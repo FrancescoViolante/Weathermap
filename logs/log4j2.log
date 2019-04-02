@@ -524,3 +524,802 @@ Verify the connector's configuration, identify and stop any process that's liste
 2019-03-27 19:19:48.508  INFO LAPTOP-VUGI3LBV --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
 2019-03-27 19:19:48.523  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
 2019-03-27 19:19:48.528  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Started ExampleController in 2.988 seconds (JVM running for 3.969)
+2019-04-02 21:01:23.850  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Starting ExampleController on LAPTOP-VUGI3LBV with PID 22440 (C:\Users\fr_vi\eclipse-workspace-try\Weathermap\target\classes started by fr_vi in C:\Users\fr_vi\eclipse-workspace-try\Weathermap)
+2019-04-02 21:01:23.866  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : No active profile set, falling back to default profiles: default
+2019-04-02 21:01:23.913  INFO LAPTOP-VUGI3LBV --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@131ef10: startup date [Tue Apr 02 21:01:23 CEST 2019]; root of context hierarchy
+2019-04-02 21:01:25.341  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-02 21:01:25.372  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:01:25.388  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-02 21:01:25.388  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-02 21:01:25.388  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\fr_vi\AppData\Local\Microsoft\WindowsApps;C:\Users\fr_vi\AppData\Roaming\npm;C:\Users\fr_vi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fr_vi\Desktop;;.]
+2019-04-02 21:01:25.500  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-02 21:01:25.500  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1587 ms
+2019-04-02 21:01:25.588  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-02 21:01:25.588  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-02 21:01:25.588  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-02 21:01:25.588  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-02 21:01:25.588  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-02 21:01:25.697  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:01:25.838  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@131ef10: startup date [Tue Apr 02 21:01:23 CEST 2019]; root of context hierarchy
+2019-04-02 21:01:25.963  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/getWheather],methods=[GET],produces=[application/json]}" onto public org.json.simple.JSONObject controller.ExampleController.getWheather()
+2019-04-02 21:01:25.963  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/prova],methods=[GET]}" onto public java.lang.String controller.ExampleController.firstMessage()
+2019-04-02 21:01:25.963  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-02 21:01:25.963  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-02 21:01:25.978  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:01:25.978  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:01:26.119  INFO LAPTOP-VUGI3LBV --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-02 21:01:26.134  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:01:26.150  INFO LAPTOP-VUGI3LBV --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2019-04-02 21:01:26.165  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-02 21:01:26.165  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Started ExampleController in 2.541 seconds (JVM running for 3.309)
+2019-04-02 21:01:32.833  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-02 21:01:32.833  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-02 21:01:32.847  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 2 ms
+2019-04-02 21:01:32.878  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:01:32.878 ERROR LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException
+	at controller.ExampleController.getWheather(ExampleController.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-04-02 21:05:27.041  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Starting ExampleController on LAPTOP-VUGI3LBV with PID 19460 (C:\Users\fr_vi\eclipse-workspace-try\Weathermap\target\classes started by fr_vi in C:\Users\fr_vi\eclipse-workspace-try\Weathermap)
+2019-04-02 21:05:27.057  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : No active profile set, falling back to default profiles: default
+2019-04-02 21:05:27.088  INFO LAPTOP-VUGI3LBV --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@8297b3a: startup date [Tue Apr 02 21:05:27 CEST 2019]; root of context hierarchy
+2019-04-02 21:05:28.166  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-02 21:05:28.196  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:05:28.196  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-02 21:05:28.196  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-02 21:05:28.212  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\fr_vi\AppData\Local\Microsoft\WindowsApps;C:\Users\fr_vi\AppData\Roaming\npm;C:\Users\fr_vi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fr_vi\Desktop;;.]
+2019-04-02 21:05:28.307  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-02 21:05:28.307  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1219 ms
+2019-04-02 21:05:28.369  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-02 21:05:28.369  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-02 21:05:28.369  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-02 21:05:28.369  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-02 21:05:28.369  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-02 21:05:28.479  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:05:28.608  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@8297b3a: startup date [Tue Apr 02 21:05:27 CEST 2019]; root of context hierarchy
+2019-04-02 21:05:28.717  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/prova],methods=[GET]}" onto public java.lang.String controller.ExampleController.firstMessage()
+2019-04-02 21:05:28.717  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/getWheather],methods=[GET],produces=[application/json]}" onto public org.json.simple.JSONObject controller.ExampleController.getWheather()
+2019-04-02 21:05:28.717  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-02 21:05:28.717  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-02 21:05:28.749  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:05:28.749  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:05:28.874  INFO LAPTOP-VUGI3LBV --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-02 21:05:28.874  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:05:28.889  INFO LAPTOP-VUGI3LBV --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2019-04-02 21:05:28.905  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-02 21:05:28.905  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Started ExampleController in 2.082 seconds (JVM running for 2.735)
+2019-04-02 21:05:33.784  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-02 21:05:33.784  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-02 21:05:33.786  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 1 ms
+2019-04-02 21:05:33.818  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:05:33.818  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : START >> :controller.ExampleController.find
+2019-04-02 21:05:34.842  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : END >> :controller.ExampleController.find
+2019-04-02 21:05:34.853 ERROR LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException
+	at java.util.Objects.requireNonNull(Objects.java:203)
+	at java.util.ArrayList.removeAll(ArrayList.java:689)
+	at controller.ExampleController.getWheather(ExampleController.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-04-02 21:06:19.603  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Starting ExampleController on LAPTOP-VUGI3LBV with PID 23252 (C:\Users\fr_vi\eclipse-workspace-try\Weathermap\target\classes started by fr_vi in C:\Users\fr_vi\eclipse-workspace-try\Weathermap)
+2019-04-02 21:06:19.603  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : No active profile set, falling back to default profiles: default
+2019-04-02 21:06:19.650  INFO LAPTOP-VUGI3LBV --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d131e1b: startup date [Tue Apr 02 21:06:19 CEST 2019]; root of context hierarchy
+2019-04-02 21:06:20.947  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-02 21:06:20.972  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:06:20.987  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-02 21:06:20.987  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-02 21:06:20.987  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\fr_vi\AppData\Local\Microsoft\WindowsApps;C:\Users\fr_vi\AppData\Roaming\npm;C:\Users\fr_vi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fr_vi\Desktop;;.]
+2019-04-02 21:06:21.103  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-02 21:06:21.103  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1453 ms
+2019-04-02 21:06:21.181  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-02 21:06:21.181  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-02 21:06:21.181  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-02 21:06:21.181  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-02 21:06:21.181  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-02 21:06:21.338  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:06:21.509  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d131e1b: startup date [Tue Apr 02 21:06:19 CEST 2019]; root of context hierarchy
+2019-04-02 21:06:21.635  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/prova],methods=[GET]}" onto public java.lang.String controller.ExampleController.firstMessage()
+2019-04-02 21:06:21.635  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/getWheather],methods=[GET],produces=[application/json]}" onto public org.json.simple.JSONObject controller.ExampleController.getWheather()
+2019-04-02 21:06:21.635  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-02 21:06:21.635  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-02 21:06:21.666  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:06:21.666  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:06:21.838  INFO LAPTOP-VUGI3LBV --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-02 21:06:21.854  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:06:21.854 ERROR LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardService                  : Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at controller.ExampleController.main(ExampleController.java:142)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:219)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1151)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 more
+2019-04-02 21:06:21.854  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:06:21.854  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2019-04-02 21:06:21.869  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.u.LifecycleBase                    : The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-04-02 21:06:21.869  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:06:21.869  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:06:21.885  INFO LAPTOP-VUGI3LBV --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-04-02 21:06:21.885 ERROR LAPTOP-VUGI3LBV --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-04-02 21:06:21.885  INFO LAPTOP-VUGI3LBV --- [           main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d131e1b: startup date [Tue Apr 02 21:06:19 CEST 2019]; root of context hierarchy
+2019-04-02 21:06:21.885  INFO LAPTOP-VUGI3LBV --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-04-02 21:06:33.745  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Starting ExampleController on LAPTOP-VUGI3LBV with PID 7600 (C:\Users\fr_vi\eclipse-workspace-try\Weathermap\target\classes started by fr_vi in C:\Users\fr_vi\eclipse-workspace-try\Weathermap)
+2019-04-02 21:06:33.752  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : No active profile set, falling back to default profiles: default
+2019-04-02 21:06:33.805  INFO LAPTOP-VUGI3LBV --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@615091b8: startup date [Tue Apr 02 21:06:33 CEST 2019]; root of context hierarchy
+2019-04-02 21:06:35.072  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-02 21:06:35.096  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:06:35.111  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-02 21:06:35.111  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-02 21:06:35.127  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\fr_vi\AppData\Local\Microsoft\WindowsApps;C:\Users\fr_vi\AppData\Roaming\npm;C:\Users\fr_vi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fr_vi\Desktop;;.]
+2019-04-02 21:06:35.236  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-02 21:06:35.236  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1434 ms
+2019-04-02 21:06:35.330  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-02 21:06:35.330  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-02 21:06:35.330  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-02 21:06:35.330  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-02 21:06:35.330  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-02 21:06:35.455  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:06:35.635  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@615091b8: startup date [Tue Apr 02 21:06:33 CEST 2019]; root of context hierarchy
+2019-04-02 21:06:35.776  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/prova],methods=[GET]}" onto public java.lang.String controller.ExampleController.firstMessage()
+2019-04-02 21:06:35.776  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/getWheather],methods=[GET],produces=[application/json]}" onto public org.json.simple.JSONObject controller.ExampleController.getWheather()
+2019-04-02 21:06:35.776  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-02 21:06:35.776  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-02 21:06:35.807  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:06:35.807  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:06:35.963  INFO LAPTOP-VUGI3LBV --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-02 21:06:35.963  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:06:35.979  INFO LAPTOP-VUGI3LBV --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2019-04-02 21:06:36.010  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-02 21:06:36.010  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Started ExampleController in 2.554 seconds (JVM running for 3.416)
+2019-04-02 21:06:40.885  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-02 21:06:40.885  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-02 21:06:40.895  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+2019-04-02 21:06:40.927  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:07:41.066  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Starting ExampleController on LAPTOP-VUGI3LBV with PID 6984 (C:\Users\fr_vi\eclipse-workspace-try\Weathermap\target\classes started by fr_vi in C:\Users\fr_vi\eclipse-workspace-try\Weathermap)
+2019-04-02 21:07:41.066  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : No active profile set, falling back to default profiles: default
+2019-04-02 21:07:41.113  INFO LAPTOP-VUGI3LBV --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@61e94def: startup date [Tue Apr 02 21:07:41 CEST 2019]; root of context hierarchy
+2019-04-02 21:07:42.394  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-02 21:07:42.424  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:07:42.429  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-02 21:07:42.429  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-02 21:07:42.445  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\fr_vi\AppData\Local\Microsoft\WindowsApps;C:\Users\fr_vi\AppData\Roaming\npm;C:\Users\fr_vi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fr_vi\Desktop;;.]
+2019-04-02 21:07:42.538  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-02 21:07:42.538  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1425 ms
+2019-04-02 21:07:42.632  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-02 21:07:42.632  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-02 21:07:42.632  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-02 21:07:42.632  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-02 21:07:42.632  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-02 21:07:42.757  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:07:42.929  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@61e94def: startup date [Tue Apr 02 21:07:41 CEST 2019]; root of context hierarchy
+2019-04-02 21:07:43.070  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/prova],methods=[GET]}" onto public java.lang.String controller.ExampleController.firstMessage()
+2019-04-02 21:07:43.070  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/getWheather],methods=[GET],produces=[application/json]}" onto public org.json.simple.JSONObject controller.ExampleController.getWheather()
+2019-04-02 21:07:43.070  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-02 21:07:43.070  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-02 21:07:43.085  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:07:43.085  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:07:43.257  INFO LAPTOP-VUGI3LBV --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-02 21:07:43.273  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:07:43.288  INFO LAPTOP-VUGI3LBV --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2019-04-02 21:07:43.304  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-02 21:07:43.320  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Started ExampleController in 2.529 seconds (JVM running for 3.415)
+2019-04-02 21:07:46.780  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-02 21:07:46.780  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-02 21:07:46.797  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2019-04-02 21:07:46.824  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:08:21.250 ERROR LAPTOP-VUGI3LBV --- [nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException
+	at controller.ExampleController.getWheather(ExampleController.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-04-02 21:09:15.126  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-9] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:10:06.275  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Starting ExampleController on LAPTOP-VUGI3LBV with PID 21288 (C:\Users\fr_vi\eclipse-workspace-try\Weathermap\target\classes started by fr_vi in C:\Users\fr_vi\eclipse-workspace-try\Weathermap)
+2019-04-02 21:10:06.275  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : No active profile set, falling back to default profiles: default
+2019-04-02 21:10:06.321  INFO LAPTOP-VUGI3LBV --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@545b995e: startup date [Tue Apr 02 21:10:06 CEST 2019]; root of context hierarchy
+2019-04-02 21:10:07.591  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-02 21:10:07.623  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:10:07.639  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-02 21:10:07.639  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-02 21:10:07.639  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\fr_vi\AppData\Local\Microsoft\WindowsApps;C:\Users\fr_vi\AppData\Roaming\npm;C:\Users\fr_vi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fr_vi\Desktop;;.]
+2019-04-02 21:10:07.748  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-02 21:10:07.748  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1427 ms
+2019-04-02 21:10:07.842  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-02 21:10:07.842  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-02 21:10:07.842  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-02 21:10:07.842  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-02 21:10:07.842  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-02 21:10:07.967  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:10:08.151  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@545b995e: startup date [Tue Apr 02 21:10:06 CEST 2019]; root of context hierarchy
+2019-04-02 21:10:08.292  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/prova],methods=[GET]}" onto public java.lang.String controller.ExampleController.firstMessage()
+2019-04-02 21:10:08.292  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/getWheather],methods=[GET],produces=[application/json]}" onto public org.json.simple.JSONObject controller.ExampleController.getWheather()
+2019-04-02 21:10:08.292  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-02 21:10:08.292  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-02 21:10:08.323  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:10:08.323  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:10:08.464  INFO LAPTOP-VUGI3LBV --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-02 21:10:08.479  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:10:08.495  INFO LAPTOP-VUGI3LBV --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2019-04-02 21:10:08.511  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-02 21:10:08.531  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Started ExampleController in 2.523 seconds (JVM running for 3.361)
+2019-04-02 21:10:11.607  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-02 21:10:11.607  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-02 21:10:11.630  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2019-04-02 21:10:11.646  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:10:15.724  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] c.ExampleController                      : START >> :controller.ExampleController.find
+2019-04-02 21:11:18.276  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Starting ExampleController on LAPTOP-VUGI3LBV with PID 17712 (C:\Users\fr_vi\eclipse-workspace-try\Weathermap\target\classes started by fr_vi in C:\Users\fr_vi\eclipse-workspace-try\Weathermap)
+2019-04-02 21:11:18.276  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : No active profile set, falling back to default profiles: default
+2019-04-02 21:11:18.323  INFO LAPTOP-VUGI3LBV --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@544fa968: startup date [Tue Apr 02 21:11:18 CEST 2019]; root of context hierarchy
+2019-04-02 21:11:19.406  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-02 21:11:19.437  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:11:19.437  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-02 21:11:19.437  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-02 21:11:19.453  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\fr_vi\AppData\Local\Microsoft\WindowsApps;C:\Users\fr_vi\AppData\Roaming\npm;C:\Users\fr_vi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fr_vi\Desktop;;.]
+2019-04-02 21:11:19.547  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-02 21:11:19.547  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1224 ms
+2019-04-02 21:11:19.602  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-02 21:11:19.618  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-02 21:11:19.618  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-02 21:11:19.618  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-02 21:11:19.618  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-02 21:11:19.717  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:11:19.847  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@544fa968: startup date [Tue Apr 02 21:11:18 CEST 2019]; root of context hierarchy
+2019-04-02 21:11:19.972  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/prova],methods=[GET]}" onto public java.lang.String controller.ExampleController.firstMessage()
+2019-04-02 21:11:19.972  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/getWheather],methods=[GET],produces=[application/json]}" onto public org.json.simple.JSONObject controller.ExampleController.getWheather()
+2019-04-02 21:11:19.972  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-02 21:11:19.972  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-02 21:11:20.003  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:11:20.003  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:11:20.117  INFO LAPTOP-VUGI3LBV --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-02 21:11:20.132  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:11:20.151  INFO LAPTOP-VUGI3LBV --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2019-04-02 21:11:20.164  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-02 21:11:20.167  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Started ExampleController in 2.111 seconds (JVM running for 2.763)
+2019-04-02 21:11:26.357  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-02 21:11:26.357  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-02 21:11:26.366  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+2019-04-02 21:11:26.381  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:11:26.381  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : START >> :controller.ExampleController.find
+2019-04-02 21:11:27.376  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : END >> :controller.ExampleController.find
+2019-04-02 21:11:27.384  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : START >> :controller.ExampleController.getRandomId
+2019-04-02 21:11:27.384  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : 
+Index :168426
+2019-04-02 21:11:27.384  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : END >> :controller.ExampleController.getRandomId
+2019-04-02 21:11:27.687  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : END >> :controller.ExampleController.getWheather
+2019-04-02 21:12:27.431  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Starting ExampleController on LAPTOP-VUGI3LBV with PID 23920 (C:\Users\fr_vi\eclipse-workspace-try\Weathermap\target\classes started by fr_vi in C:\Users\fr_vi\eclipse-workspace-try\Weathermap)
+2019-04-02 21:12:27.431  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : No active profile set, falling back to default profiles: default
+2019-04-02 21:12:27.473  INFO LAPTOP-VUGI3LBV --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@64a40280: startup date [Tue Apr 02 21:12:27 CEST 2019]; root of context hierarchy
+2019-04-02 21:12:28.809  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-02 21:12:28.828  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:12:28.843  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-02 21:12:28.843  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-02 21:12:28.843  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\fr_vi\AppData\Local\Microsoft\WindowsApps;C:\Users\fr_vi\AppData\Roaming\npm;C:\Users\fr_vi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fr_vi\Desktop;;.]
+2019-04-02 21:12:28.953  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-02 21:12:28.953  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1480 ms
+2019-04-02 21:12:29.050  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-02 21:12:29.052  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-02 21:12:29.052  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-02 21:12:29.052  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-02 21:12:29.052  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-02 21:12:29.184  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:12:29.403  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@64a40280: startup date [Tue Apr 02 21:12:27 CEST 2019]; root of context hierarchy
+2019-04-02 21:12:29.584  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/prova],methods=[GET]}" onto public java.lang.String controller.ExampleController.firstMessage()
+2019-04-02 21:12:29.600  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/getWheather],methods=[GET],produces=[application/json]}" onto public org.json.simple.JSONObject controller.ExampleController.getWheather()
+2019-04-02 21:12:29.600  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-02 21:12:29.600  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-02 21:12:29.658  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:12:29.658  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:12:29.825  INFO LAPTOP-VUGI3LBV --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-02 21:12:29.841  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:12:29.857  INFO LAPTOP-VUGI3LBV --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2019-04-02 21:12:29.873  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-02 21:12:29.888  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Started ExampleController in 2.719 seconds (JVM running for 3.588)
+2019-04-02 21:12:36.890  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-02 21:12:36.890  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-02 21:12:36.908  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2019-04-02 21:12:36.923  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:13:35.147  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] c.ExampleController                      : START >> :controller.ExampleController.find
+2019-04-02 21:14:56.492  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Starting ExampleController on LAPTOP-VUGI3LBV with PID 20144 (C:\Users\fr_vi\eclipse-workspace-try\Weathermap\target\classes started by fr_vi in C:\Users\fr_vi\eclipse-workspace-try\Weathermap)
+2019-04-02 21:14:56.492  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : No active profile set, falling back to default profiles: default
+2019-04-02 21:14:56.552  INFO LAPTOP-VUGI3LBV --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@76f4b65: startup date [Tue Apr 02 21:14:56 CEST 2019]; root of context hierarchy
+2019-04-02 21:14:57.819  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-02 21:14:57.844  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:14:57.859  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-02 21:14:57.859  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-02 21:14:57.859  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\fr_vi\AppData\Local\Microsoft\WindowsApps;C:\Users\fr_vi\AppData\Roaming\npm;C:\Users\fr_vi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fr_vi\Desktop;;.]
+2019-04-02 21:14:57.969  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-02 21:14:57.969  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1419 ms
+2019-04-02 21:14:58.063  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-02 21:14:58.063  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-02 21:14:58.063  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-02 21:14:58.063  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-02 21:14:58.063  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-02 21:14:58.194  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:14:58.397  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@76f4b65: startup date [Tue Apr 02 21:14:56 CEST 2019]; root of context hierarchy
+2019-04-02 21:14:58.539  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/prova],methods=[GET]}" onto public java.lang.String controller.ExampleController.firstMessage()
+2019-04-02 21:14:58.540  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/getWheather],methods=[GET],produces=[application/json]}" onto public org.json.simple.JSONObject controller.ExampleController.getWheather()
+2019-04-02 21:14:58.542  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-02 21:14:58.542  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-02 21:14:58.563  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:14:58.563  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:14:58.725  INFO LAPTOP-VUGI3LBV --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-02 21:14:58.741  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:14:58.756  INFO LAPTOP-VUGI3LBV --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2019-04-02 21:14:58.772  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-02 21:14:58.772  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Started ExampleController in 2.562 seconds (JVM running for 3.48)
+2019-04-02 21:15:05.474  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-02 21:15:05.474  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-02 21:15:05.477  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 3 ms
+2019-04-02 21:15:05.508  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:16:02.152  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Starting ExampleController on LAPTOP-VUGI3LBV with PID 10720 (C:\Users\fr_vi\eclipse-workspace-try\Weathermap\target\classes started by fr_vi in C:\Users\fr_vi\eclipse-workspace-try\Weathermap)
+2019-04-02 21:16:02.158  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : No active profile set, falling back to default profiles: default
+2019-04-02 21:16:02.193  INFO LAPTOP-VUGI3LBV --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@77102b91: startup date [Tue Apr 02 21:16:02 CEST 2019]; root of context hierarchy
+2019-04-02 21:16:03.441  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-02 21:16:03.463  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:16:03.479  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-02 21:16:03.479  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-02 21:16:03.495  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\fr_vi\AppData\Local\Microsoft\WindowsApps;C:\Users\fr_vi\AppData\Roaming\npm;C:\Users\fr_vi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fr_vi\Desktop;;.]
+2019-04-02 21:16:03.591  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-02 21:16:03.591  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1398 ms
+2019-04-02 21:16:03.676  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-02 21:16:03.692  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-02 21:16:03.692  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-02 21:16:03.692  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-02 21:16:03.692  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-02 21:16:03.801  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:16:03.988  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@77102b91: startup date [Tue Apr 02 21:16:02 CEST 2019]; root of context hierarchy
+2019-04-02 21:16:04.123  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/prova],methods=[GET]}" onto public java.lang.String controller.ExampleController.firstMessage()
+2019-04-02 21:16:04.139  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/getWheather],methods=[GET],produces=[application/json]}" onto public org.json.simple.JSONObject controller.ExampleController.getWheather()
+2019-04-02 21:16:04.142  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-02 21:16:04.142  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-02 21:16:04.176  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:16:04.176  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:16:04.316  INFO LAPTOP-VUGI3LBV --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-02 21:16:04.316  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:16:04.332  INFO LAPTOP-VUGI3LBV --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2019-04-02 21:16:04.363  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-02 21:16:04.363  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Started ExampleController in 2.484 seconds (JVM running for 3.382)
+2019-04-02 21:16:14.962  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-02 21:16:14.963  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-02 21:16:14.968  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 5 ms
+2019-04-02 21:16:14.988  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:16:25.660  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : START >> :controller.ExampleController.find
+2019-04-02 21:17:09.104  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Starting ExampleController on LAPTOP-VUGI3LBV with PID 24368 (C:\Users\fr_vi\eclipse-workspace-try\Weathermap\target\classes started by fr_vi in C:\Users\fr_vi\eclipse-workspace-try\Weathermap)
+2019-04-02 21:17:09.104  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : No active profile set, falling back to default profiles: default
+2019-04-02 21:17:09.157  INFO LAPTOP-VUGI3LBV --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2ef14fe: startup date [Tue Apr 02 21:17:09 CEST 2019]; root of context hierarchy
+2019-04-02 21:17:10.425  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-02 21:17:10.458  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:17:10.474  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-02 21:17:10.474  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-02 21:17:10.474  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\fr_vi\AppData\Local\Microsoft\WindowsApps;C:\Users\fr_vi\AppData\Roaming\npm;C:\Users\fr_vi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fr_vi\Desktop;;.]
+2019-04-02 21:17:10.591  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-02 21:17:10.591  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1434 ms
+2019-04-02 21:17:10.690  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-02 21:17:10.690  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-02 21:17:10.690  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-02 21:17:10.690  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-02 21:17:10.690  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-02 21:17:10.830  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:17:11.002  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2ef14fe: startup date [Tue Apr 02 21:17:09 CEST 2019]; root of context hierarchy
+2019-04-02 21:17:11.129  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/prova],methods=[GET]}" onto public java.lang.String controller.ExampleController.firstMessage()
+2019-04-02 21:17:11.129  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/getWheather],methods=[GET],produces=[application/json]}" onto public org.json.simple.JSONObject controller.ExampleController.getWheather()
+2019-04-02 21:17:11.129  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-02 21:17:11.129  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-02 21:17:11.166  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:17:11.166  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:17:11.315  INFO LAPTOP-VUGI3LBV --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-02 21:17:11.331  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:17:11.346  INFO LAPTOP-VUGI3LBV --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2019-04-02 21:17:11.362  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-02 21:17:11.362  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Started ExampleController in 2.548 seconds (JVM running for 3.504)
+2019-04-02 21:17:20.713  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-02 21:17:20.713  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-02 21:17:20.742  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2019-04-02 21:17:20.757  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:17:40.719  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Starting ExampleController on LAPTOP-VUGI3LBV with PID 4240 (C:\Users\fr_vi\eclipse-workspace-try\Weathermap\target\classes started by fr_vi in C:\Users\fr_vi\eclipse-workspace-try\Weathermap)
+2019-04-02 21:17:40.727  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : No active profile set, falling back to default profiles: default
+2019-04-02 21:17:40.774  INFO LAPTOP-VUGI3LBV --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4aa83f4f: startup date [Tue Apr 02 21:17:40 CEST 2019]; root of context hierarchy
+2019-04-02 21:17:42.057  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-02 21:17:42.079  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:17:42.095  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-02 21:17:42.095  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-02 21:17:42.111  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\fr_vi\AppData\Local\Microsoft\WindowsApps;C:\Users\fr_vi\AppData\Roaming\npm;C:\Users\fr_vi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fr_vi\Desktop;;.]
+2019-04-02 21:17:42.219  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-02 21:17:42.219  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1460 ms
+2019-04-02 21:17:42.329  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-02 21:17:42.329  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-02 21:17:42.329  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-02 21:17:42.329  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-02 21:17:42.329  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-02 21:17:42.469  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:17:42.656  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4aa83f4f: startup date [Tue Apr 02 21:17:40 CEST 2019]; root of context hierarchy
+2019-04-02 21:17:42.796  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/prova],methods=[GET]}" onto public java.lang.String controller.ExampleController.firstMessage()
+2019-04-02 21:17:42.796  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/getWheather],methods=[GET],produces=[application/json]}" onto public org.json.simple.JSONObject controller.ExampleController.getWheather()
+2019-04-02 21:17:42.796  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-02 21:17:42.796  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-02 21:17:42.828  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:17:42.828  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:17:42.984  INFO LAPTOP-VUGI3LBV --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-02 21:17:42.984  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:17:42.999  INFO LAPTOP-VUGI3LBV --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2019-04-02 21:17:43.033  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-02 21:17:43.037  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Started ExampleController in 2.596 seconds (JVM running for 3.369)
+2019-04-02 21:17:48.739  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-02 21:17:48.739  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-02 21:17:48.753  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2019-04-02 21:17:48.769  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:17:49.038  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : END >> :controller.ExampleController.getWheather
+2019-04-02 21:18:07.369  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-4] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:18:12.250  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-4] c.ExampleController                      : START >> :controller.ExampleController.find
+2019-04-02 21:20:17.283  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Starting ExampleController on LAPTOP-VUGI3LBV with PID 20084 (C:\Users\fr_vi\eclipse-workspace-try\Weathermap\target\classes started by fr_vi in C:\Users\fr_vi\eclipse-workspace-try\Weathermap)
+2019-04-02 21:20:17.283  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : No active profile set, falling back to default profiles: default
+2019-04-02 21:20:17.330  INFO LAPTOP-VUGI3LBV --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@63fbfaeb: startup date [Tue Apr 02 21:20:17 CEST 2019]; root of context hierarchy
+2019-04-02 21:20:18.600  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-02 21:20:18.630  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:20:18.638  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-02 21:20:18.638  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-02 21:20:18.652  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\fr_vi\AppData\Local\Microsoft\WindowsApps;C:\Users\fr_vi\AppData\Roaming\npm;C:\Users\fr_vi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fr_vi\Desktop;;.]
+2019-04-02 21:20:18.761  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-02 21:20:18.761  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1431 ms
+2019-04-02 21:20:18.847  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-02 21:20:18.847  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-02 21:20:18.847  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-02 21:20:18.847  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-02 21:20:18.847  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-02 21:20:18.969  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:20:19.176  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@63fbfaeb: startup date [Tue Apr 02 21:20:17 CEST 2019]; root of context hierarchy
+2019-04-02 21:20:19.302  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/getWheather],methods=[GET],produces=[application/json]}" onto public org.json.simple.JSONObject controller.ExampleController.getWheather()
+2019-04-02 21:20:19.302  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/prova],methods=[GET]}" onto public java.lang.String controller.ExampleController.firstMessage()
+2019-04-02 21:20:19.302  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-02 21:20:19.302  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-02 21:20:19.333  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:20:19.333  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:20:19.487  INFO LAPTOP-VUGI3LBV --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-02 21:20:19.502  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:20:19.518  INFO LAPTOP-VUGI3LBV --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2019-04-02 21:20:19.547  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-02 21:20:19.553  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Started ExampleController in 2.537 seconds (JVM running for 3.411)
+2019-04-02 21:20:31.697  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-02 21:20:31.697  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-02 21:20:31.725  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2019-04-02 21:20:31.746  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:20:31.902  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : END >> :controller.ExampleController.getWheather
+2019-04-02 21:20:47.872  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:24:15.206  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : START >> :controller.ExampleController.find
+2019-04-02 21:24:16.267  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : END >> :controller.ExampleController.find
+2019-04-02 21:25:27.233  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : START >> :controller.ExampleController.getRandomId
+2019-04-02 21:25:27.248  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : 
+Index :138298
+2019-04-02 21:25:27.248  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : END >> :controller.ExampleController.getRandomId
+2019-04-02 21:25:45.311  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : END >> :controller.ExampleController.getWheather
+2019-04-02 21:26:03.807  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-4] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:26:03.807  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-4] c.ExampleController                      : START >> :controller.ExampleController.find
+2019-04-02 21:26:04.857  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-4] c.ExampleController                      : END >> :controller.ExampleController.find
+2019-04-02 21:29:03.680  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-4] c.ExampleController                      : START >> :controller.ExampleController.getRandomId
+2019-04-02 21:29:03.684  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-4] c.ExampleController                      : 
+Index :163524
+2019-04-02 21:29:03.685  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-4] c.ExampleController                      : END >> :controller.ExampleController.getRandomId
+2019-04-02 21:29:07.042  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-4] c.ExampleController                      : END >> :controller.ExampleController.getWheather
+2019-04-02 21:30:09.707  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Starting ExampleController on LAPTOP-VUGI3LBV with PID 18696 (C:\Users\fr_vi\eclipse-workspace-try\Weathermap\target\classes started by fr_vi in C:\Users\fr_vi\eclipse-workspace-try\Weathermap)
+2019-04-02 21:30:09.723  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : No active profile set, falling back to default profiles: default
+2019-04-02 21:30:09.770  INFO LAPTOP-VUGI3LBV --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22f31dec: startup date [Tue Apr 02 21:30:09 CEST 2019]; root of context hierarchy
+2019-04-02 21:30:11.019  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-02 21:30:11.053  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:30:11.059  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-02 21:30:11.059  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-02 21:30:11.059  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\fr_vi\AppData\Local\Microsoft\WindowsApps;C:\Users\fr_vi\AppData\Roaming\npm;C:\Users\fr_vi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fr_vi\Desktop;;.]
+2019-04-02 21:30:11.175  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-02 21:30:11.175  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1421 ms
+2019-04-02 21:30:11.269  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-02 21:30:11.269  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-02 21:30:11.284  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-02 21:30:11.284  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-02 21:30:11.284  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-02 21:30:11.410  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:30:11.575  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22f31dec: startup date [Tue Apr 02 21:30:09 CEST 2019]; root of context hierarchy
+2019-04-02 21:30:11.707  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/getWheather],methods=[GET],produces=[application/json]}" onto public org.json.simple.JSONObject controller.ExampleController.getWheather()
+2019-04-02 21:30:11.707  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/prova],methods=[GET]}" onto public java.lang.String controller.ExampleController.firstMessage()
+2019-04-02 21:30:11.707  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-02 21:30:11.707  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-02 21:30:11.739  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:30:11.739  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:30:11.895  INFO LAPTOP-VUGI3LBV --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-02 21:30:11.910  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:30:11.926  INFO LAPTOP-VUGI3LBV --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2019-04-02 21:30:11.942  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-02 21:30:11.942  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Started ExampleController in 2.5 seconds (JVM running for 3.357)
+2019-04-02 21:30:20.666  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-02 21:30:20.666  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-02 21:30:20.690  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2019-04-02 21:30:20.696  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:30:20.959  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : END >> :controller.ExampleController.getWheather
+2019-04-02 21:30:51.778  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:30:51.778  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : START >> :controller.ExampleController.find
+2019-04-02 21:30:52.798  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : END >> :controller.ExampleController.find
+2019-04-02 21:38:09.518  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : END >> :controller.ExampleController.getWheather
+2019-04-02 21:40:29.356  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Starting ExampleController on LAPTOP-VUGI3LBV with PID 20740 (C:\Users\fr_vi\eclipse-workspace-try\Weathermap\target\classes started by fr_vi in C:\Users\fr_vi\eclipse-workspace-try\Weathermap)
+2019-04-02 21:40:29.356  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : No active profile set, falling back to default profiles: default
+2019-04-02 21:40:29.403  INFO LAPTOP-VUGI3LBV --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@544fa968: startup date [Tue Apr 02 21:40:29 CEST 2019]; root of context hierarchy
+2019-04-02 21:40:30.563  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-02 21:40:30.585  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:40:30.585  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-02 21:40:30.585  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-02 21:40:30.600  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\fr_vi\AppData\Local\Microsoft\WindowsApps;C:\Users\fr_vi\AppData\Roaming\npm;C:\Users\fr_vi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fr_vi\Desktop;;.]
+2019-04-02 21:40:30.699  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-02 21:40:30.699  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1296 ms
+2019-04-02 21:40:30.777  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-02 21:40:30.777  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-02 21:40:30.777  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-02 21:40:30.777  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-02 21:40:30.777  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-02 21:40:30.871  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:40:31.012  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@544fa968: startup date [Tue Apr 02 21:40:29 CEST 2019]; root of context hierarchy
+2019-04-02 21:40:31.115  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/getWheather],methods=[GET],produces=[application/json]}" onto public org.json.simple.JSONObject controller.ExampleController.getWheather()
+2019-04-02 21:40:31.115  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/prova],methods=[GET]}" onto public java.lang.String controller.ExampleController.firstMessage()
+2019-04-02 21:40:31.130  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-02 21:40:31.130  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-02 21:40:31.148  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:40:31.149  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:40:31.261  INFO LAPTOP-VUGI3LBV --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-02 21:40:31.277  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:40:31.293  INFO LAPTOP-VUGI3LBV --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2019-04-02 21:40:31.293  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-02 21:40:31.308  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Started ExampleController in 2.176 seconds (JVM running for 2.825)
+2019-04-02 21:40:37.168  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-02 21:40:37.168  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-02 21:40:37.184  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2019-04-02 21:40:37.206  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:40:37.398  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-2] c.ExampleController                      : END >> :controller.ExampleController.getWheather
+2019-04-02 21:43:15.461  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-5] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:43:15.462  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-5] c.ExampleController                      : START >> :controller.ExampleController.find
+2019-04-02 21:43:16.455  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-5] c.ExampleController                      : END >> :controller.ExampleController.find
+2019-04-02 21:43:16.455  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-5] c.ExampleController                      : START >> :controller.ExampleController.getRandomId
+2019-04-02 21:43:16.455  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-5] c.ExampleController                      : 
+Index :110836
+2019-04-02 21:43:16.455  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-5] c.ExampleController                      : END >> :controller.ExampleController.getRandomId
+2019-04-02 21:43:16.725  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-5] c.ExampleController                      : END >> :controller.ExampleController.getWheather
+2019-04-02 21:43:35.011  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Starting ExampleController on LAPTOP-VUGI3LBV with PID 17164 (C:\Users\fr_vi\eclipse-workspace-try\Weathermap\target\classes started by fr_vi in C:\Users\fr_vi\eclipse-workspace-try\Weathermap)
+2019-04-02 21:43:35.011  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : No active profile set, falling back to default profiles: default
+2019-04-02 21:43:35.061  INFO LAPTOP-VUGI3LBV --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7cbc3762: startup date [Tue Apr 02 21:43:35 CEST 2019]; root of context hierarchy
+2019-04-02 21:43:36.272  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-02 21:43:36.292  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:43:36.301  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-02 21:43:36.301  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-02 21:43:36.313  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\fr_vi\AppData\Local\Microsoft\WindowsApps;C:\Users\fr_vi\AppData\Roaming\npm;C:\Users\fr_vi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fr_vi\Desktop;;.]
+2019-04-02 21:43:36.408  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-02 21:43:36.408  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1347 ms
+2019-04-02 21:43:36.508  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-02 21:43:36.508  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-02 21:43:36.508  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-02 21:43:36.508  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-02 21:43:36.508  INFO LAPTOP-VUGI3LBV --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-02 21:43:36.648  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:43:36.809  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7cbc3762: startup date [Tue Apr 02 21:43:35 CEST 2019]; root of context hierarchy
+2019-04-02 21:43:36.940  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/prova],methods=[GET]}" onto public java.lang.String controller.ExampleController.firstMessage()
+2019-04-02 21:43:36.940  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Weathermap/getWheather],methods=[GET],produces=[application/json]}" onto public org.json.simple.JSONObject controller.ExampleController.getWheather()
+2019-04-02 21:43:36.940  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-02 21:43:36.940  INFO LAPTOP-VUGI3LBV --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-02 21:43:36.962  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:43:36.962  INFO LAPTOP-VUGI3LBV --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-02 21:43:37.125  INFO LAPTOP-VUGI3LBV --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-02 21:43:37.147  INFO LAPTOP-VUGI3LBV --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-02 21:43:37.161  INFO LAPTOP-VUGI3LBV --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2019-04-02 21:43:37.178  INFO LAPTOP-VUGI3LBV --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-02 21:43:37.178  INFO LAPTOP-VUGI3LBV --- [           main] c.ExampleController                      : Started ExampleController in 2.436 seconds (JVM running for 3.304)
+2019-04-02 21:43:41.547  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-02 21:43:41.547  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-02 21:43:41.561  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2019-04-02 21:43:41.577  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:43:41.796  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-1] c.ExampleController                      : END >> :controller.ExampleController.getWheather
+2019-04-02 21:43:57.258  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:43:57.258  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : START >> :controller.ExampleController.find
+2019-04-02 21:44:48.457  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : START >> :controller.ExampleController.find
+2019-04-02 21:45:23.053  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : START >> :controller.ExampleController.find
+2019-04-02 21:45:36.523  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : END >> :controller.ExampleController.find
+2019-04-02 21:45:36.542  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : START >> :controller.ExampleController.getRandomId
+2019-04-02 21:45:36.542  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : 
+Index :127385
+2019-04-02 21:45:36.542  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : END >> :controller.ExampleController.getRandomId
+2019-04-02 21:45:36.766  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-3] c.ExampleController                      : END >> :controller.ExampleController.getWheather
+2019-04-02 21:45:46.566  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-4] c.ExampleController                      : START >> :controller.ExampleController.getWheather
+2019-04-02 21:45:46.567  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-4] c.ExampleController                      : START >> :controller.ExampleController.find
+2019-04-02 21:45:52.055  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-4] c.ExampleController                      : END >> :controller.ExampleController.find
+2019-04-02 21:45:52.065  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-4] c.ExampleController                      : START >> :controller.ExampleController.getRandomId
+2019-04-02 21:45:52.065  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-4] c.ExampleController                      : 
+Index :168313
+2019-04-02 21:45:52.065  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-4] c.ExampleController                      : END >> :controller.ExampleController.getRandomId
+2019-04-02 21:45:52.298  INFO LAPTOP-VUGI3LBV --- [nio-8080-exec-4] c.ExampleController                      : END >> :controller.ExampleController.getWheather

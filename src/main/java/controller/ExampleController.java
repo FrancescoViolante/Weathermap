@@ -22,8 +22,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -39,28 +37,47 @@ public class ExampleController {
 
 	public static String appid = PropertyUtil.getPropertyValue("APPID");
 
+	private static List<Long> extractIdList = new ArrayList<>();
+
 	@GetMapping("/prova")
-	public String firstMessage() {	
-		
+	public String firstMessage() {
+
 		return "Greetings from Spring Boot!";
 	}
 
-	@PostMapping(value = "/getWheather", produces = MediaType.APPLICATION_JSON_VALUE)
-	public JSONObject getWheather(@RequestBody List<Long> idUsedRb) {
+	@GetMapping(value = "/getWheather", produces = MediaType.APPLICATION_JSON_VALUE)
+	public JSONObject getWheather() {
 
 		LogUtil.logMethodStart();
+		long randomId;
+		if (!extractIdList.isEmpty()) {
 
-		List<Long> idList = find();
+			List<Long> idList = find();
+			idList.removeAll(extractIdList);
+
+			// If the List to retrieve data is empty, i invert that whit the extractIdList
+			if (idList.size() == 0) {
+
+				List<Long> tempList = new ArrayList<Long>(extractIdList);
+				extractIdList.clear();
+				idList.addAll(tempList);
+				
+				// Sets BerlinId for the first run
+				randomId = Long.parseLong(PropertyUtil.getPropertyValue("BerlinId"));
+				extractIdList.add(randomId);
+			} else {
+				randomId = getRandomId(idList);
+			}
+
+		} else {
+			// Sets BerlinId for the first run
+			randomId = Long.parseLong(PropertyUtil.getPropertyValue("BerlinId"));
+			extractIdList.add(randomId);
+		}
+
+		
 
 		JSONObject json = null;
-
-		// Sets BerlinId for the first run
-		long randomId = Long.parseLong(PropertyUtil.getPropertyValue("BerlinId"));
-
-		if (idUsedRb.size() != 0) {
-			idList.removeAll(idUsedRb);
-			randomId = getRandomId(idList);
-		}
 
 		try {
 			URL url = new URL("http://api.openweathermap.org/data/2.5/forecast?id=" + randomId + "&APPID=" + appid);
@@ -93,7 +110,7 @@ public class ExampleController {
 		try {
 
 			String cityListString = new String(
-					Files.readAllBytes(Paths.get("C:\\Users\\fr_vi\\eclipse-workspace-try\\city.list.json")), "UTF-8");
+					Files.readAllBytes(Paths.get(".\\src\\main\\resources\\city.list.json")), "UTF-8");
 			JSONParser parser = new JSONParser();
 			JSONArray jsonArray = (JSONArray) parser.parse(cityListString);
 
@@ -111,11 +128,11 @@ public class ExampleController {
 
 	public Long getRandomId(List<Long> idList) {
 		LogUtil.logMethodStart();
-		
-		int index = ThreadLocalRandom.current().nextInt(idList.size());		
+
+		int index = ThreadLocalRandom.current().nextInt(idList.size());
 		logger.info("\nIndex :" + index);
 		LogUtil.logMethodEnd();
-		
+
 		return idList.get(index);
 
 	}
